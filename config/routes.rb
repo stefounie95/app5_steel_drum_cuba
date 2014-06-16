@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :galeries
+
   get 'media/photos'
 
   get 'welcome/index'
