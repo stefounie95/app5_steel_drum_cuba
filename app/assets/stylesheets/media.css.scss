@@ -1,0 +1,36 @@
+// Place all the styles related to the media controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#photos {
+}
+
+#fancy-galerie {
+  background-color: #222;
+  color: #fff;
+}
+
+
+.galerie-container {
+  text-align: center;
+
+  .galerie {
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+    
+    img {
+      width: 250px;
+      height: 250px;
+      vertical-align: middle;
+      border-radius: 100%;
+      border: 13px solid rgba(255, 255, 255, 0.75);
+    }
+  }
+  
+  .galerie-titre {
+    background: white;
+    border-radius: 2px;
+    border: 1px solid #abeeee;
+  }
+}

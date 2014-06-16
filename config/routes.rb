@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'media/photos'
+
   get 'welcome/index'
 
   resources :concerts

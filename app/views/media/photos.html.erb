@@ -1,0 +1,34 @@
+<!-- rails g controller media photos -->
+<!-- creer la vue et le controller de media, contenant un premier media qui sera photos -->
+<!-- cree egalement les bonnes routes -->
+
+<section id="photos">
+  <div class="conteneur show">
+    <h2>Photos</h2>
+    
+    <% [ 
+      [
+        {photo: 'test.jpeg', description: 'Chanteix 2011<p>19 novembre 2011</p><p>22 Photos</p>'},
+        {photo: 'test.jpeg', description: 'Chanteix 2011<p>19 novembre 2011</p><p>22 Photos</p>'},
+        {photo: 'test.jpeg', description: 'Chanteix 2011<p>19 novembre 2011</p><p>22 Photos</p>'}
+      ],
+      [
+        {photo: 'test.jpeg', description: 'Chanteix 2011<p>19 novembre 2011</p><p>22 Photos</p>'},
+        {photo: 'test.jpeg', description: 'Chanteix 2011<p>19 novembre 2011</p><p>22 Photos</p>'},
+        {photo: 'test.jpeg', description: 'Chanteix 2011<p>19 novembre 2011</p><p>22 Photos</p>'}
+      ]
+    ].each do |row| %>
+      <div class='row galerie-container'>
+        <% row.each do |picture| %>
+          <div class="galerie">
+            <a href="<%= image_path  'test.jpeg' %>" class="fancyframe">
+              <%= image_tag "test.jpeg" %>           
+              <div class="galerie-titre">Chanteix 2011<p>19 novembre 2011</p><p>22 Photos</p></div><!-- #galerie-titre -->
+            </a>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+    <div class="clear"></div>
+  </div>
+</section>
