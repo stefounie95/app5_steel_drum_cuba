@@ -8,8 +8,8 @@
     
     <% [ 
       [
-        {photo: 'test.jpeg', description: 'Chanteix 2011<p>19 novembre 2011</p><p>22 Photos</p>'},
-        {photo: 'test.jpeg', description: 'Chanteix 2011<p>19 novembre 2011</p><p>22 Photos</p>'},
+        {photo: @photos.first.image_url, description: 'Chanteix 2011<p>19 novembre 2011</p><p>22 Photos</p>'},
+        {photo: @photos.second.image_url, description: 'Chanteix 2011<p>19 novembre 2011</p><p>22 Photos</p>'},
         {photo: 'test.jpeg', description: 'Chanteix 2011<p>19 novembre 2011</p><p>22 Photos</p>'}
       ],
       [
@@ -22,7 +22,7 @@
         <% row.each do |picture| %>
           <div class="galerie">
             <a href="<%= image_path  'test.jpeg' %>" class="fancyframe">
-              <%= image_tag "test.jpeg" %>           
+              <%= image_tag picture[:photo] %>           
               <div class="galerie-titre">Chanteix 2011<p>19 novembre 2011</p><p>22 Photos</p></div><!-- #galerie-titre -->
             </a>
           </div>

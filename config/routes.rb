@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  resources :photos
+  
 
   resources :galeries
+  resources :photos
+  
 
   get 'media/photos'
 
