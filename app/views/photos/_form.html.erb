@@ -1,3 +1,5 @@
+<% submit_label ||= "ploop" %> <!-- utilise la variable submit_label, ou utilise la valeur par défaut ploop" -->
+
 <%= form_for(@photo, :html => {:multipart => true}) do |f| %>
   <% if @photo.errors.any? %>
     <div id="error_explanation">
@@ -15,6 +17,7 @@
     <%= f.label :name %><br>
     <%= f.text_field :name %>
     <br><br>
+    <br><br>
     <%= image_tag(@photo.image_url) if @photo.image_url %>
     <br>
     <%= f.file_field :image %>
@@ -22,6 +25,6 @@
   </div>
 
   <div class="actions">
-    <%= f.submit %> <!--, "Mise à jour photo"-->
+    <%= f.submit submit_label, class: 'btn btn-success' %> <!--, "Mise à jour photo"-->
   </div>
 <% end %>

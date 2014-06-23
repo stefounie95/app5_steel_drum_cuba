@@ -1,6 +1,45 @@
-<h1> Albums </h1>
-<audio src="nomdufichier.mp3" autoplay>
-</audio>
+
+<div class="albumpage">
+
+  <h1> Album SteelVibration </h1>
+
+  <h2> Ecoutez les extraits : </h2>
+  <div class="container show">
+    <table class="table"> <!-- table-striped -->
+      <tr>
+        <th>Titre</th>
+        <th>Lecteur</th>
+      </tr>
+      <% @musics.each do |music| %> 
+        <tr>
+          <td> <%= music.name %></td>
+          <td> 
+             <audio controls>
+              <source src= "<%= music.sound %>" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>   
+           </td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+
+  <h2>Vous en voulez plus ?</h2>
+  <b>Achetez l'album !</b>
+
+  <br><br><br>
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+  <input type="hidden" name="cmd" value="_s-xclick">
+  <input type="hidden" name="hosted_button_id" value="YJ76R3U7GAZP4">
+  <input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !">
+  <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+  </form>
+
+</div>
 
 
-<%#= link_to "mp3", "http://website-where-file-is-stored.com/file-123456.mp3" %>
+<!-- Lecteur audio qui fonctionne : -->
+<!-- <audio controls>
+  <source src="/Ai.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio> -->

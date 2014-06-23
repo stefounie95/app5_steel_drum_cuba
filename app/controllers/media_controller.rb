@@ -4,6 +4,7 @@ class MediaController < ApplicationController
   end
   
   def albums
+    @musics=Music.where("sound is not null and sound <> '' ")
   end
   
 end

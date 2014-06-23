@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Nom:</strong>
   <%= @photo.name %>
 </p>
 
@@ -11,5 +11,5 @@
   <%= image_tag @photo.image_url.to_s %>
 </p>
 
-<%= link_to 'Edit', edit_photo_path(@photo) %> |
-<%= link_to 'Back', photos_path %>
+<%= link_to 'Editer', edit_photo_path(@photo) %> |
+<%= link_to 'Retour', photos_path %>

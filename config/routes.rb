@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  resources :musics
+
   # crée des routes pour toutes les actions de galeries et photos (créées pour la partie admin)
   resources :galeries
   resources :photos

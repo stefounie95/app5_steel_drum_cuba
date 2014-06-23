@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nom :</strong>
+  <%= @music.name %>
+</p>
+
+<%= link_to 'Editer', edit_music_path(@music) %> |
+<%= link_to 'Retour', musics_path %>

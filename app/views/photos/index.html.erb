@@ -1,4 +1,4 @@
-<h1>Listing photos</h1>
+<h1>Liste des photos</h1>
 
 <table class="table"> 
   <thead>
@@ -14,9 +14,9 @@
         <td><%= photo.name %></td>
       <!-- <td><%= image_tag photo.image_url.to_s %></td> -->
 
-        <td><%= link_to ' Show ', photo %></td>
-        <td><%= link_to ' Edit ', edit_photo_path(photo) %></td>
-        <td><%= link_to ' Destroy ', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to ' Voir ', photo %></td>
+        <td><%= link_to ' Editer ', edit_photo_path(photo) %></td>
+        <td><%= link_to ' Detruire ', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Photo', new_photo_path,  class: 'btn btn-success'%>
+<%= link_to 'Nouvelle Photo', new_photo_path,  class: 'btn btn-success' %>
