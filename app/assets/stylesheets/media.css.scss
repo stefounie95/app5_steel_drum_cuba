@@ -2,13 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#photos {
-}
-
-#fancy-galerie {
-  background-color: #222;
-  color: #fff;
-}
 
 
 .galerie-container {
@@ -24,7 +17,15 @@
       height: 250px;
       vertical-align: middle;
       border-radius: 100%;
-      border: 13px solid rgba(255, 255, 255, 0.75);
+      border: 13px solid rgba(219, 214, 214, 0.75); //190, 184, 184, 0.75);   //(255, 255, 255, 0.75);
+    }
+    
+    img:hover {
+      border: 13px solid rgba(253, 250, 250, 0.94); //219, 36, 36, 0.75);
+    }
+    
+    a:hover {
+            text-decoration: none;
     }
   }
   

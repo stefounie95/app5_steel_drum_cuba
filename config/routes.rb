@@ -1,14 +1,19 @@
 Rails.application.routes.draw do
   
-
+  # crée des routes pour toutes les actions de galeries et photos (créées pour la partie admin)
   resources :galeries
   resources :photos
   
-
-  get 'media/photos'
-
+  # pour creer les routes vers les vues medias/photos, medias/videos, et medias/albums  (uniquement les vues, créées pour la partie publique)
+  get 'media/photos' #ici on peut pas mettre un as photo puisqu'il y a aussi les routes pour "photos" de la partie admin
+  get 'media/videos', as: :videos  # ainsi ce lien sera videos_path et non plu media_videos_path
+  get 'media/albums', as: :albums 
+  #get 'whoweare' //ATTENTION, CREE UNE ERREUR
+  
+  
   get 'welcome/index'
-
+  get 'welcome/whoweare', as: :whoweare  #definit dans le controleur welcom
+  
   resources :concerts
   
 

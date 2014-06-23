@@ -1,3 +1,31 @@
+<%= form_for(@galery, :html => {:multipart => true}) do |f| %>
+  <% if @galery.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@galery.errors.count, "error") %> prohibited this galery from being saved:</h2>
+
+      <ul>
+      <% @galery.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+    <%= f.file_field :image %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+
 
 Pour installer une nouvelle librairie qui s'appelle anotate' : 
 aller dans le gemfile ajouter une ligne, tel que "gem 'annotate'
