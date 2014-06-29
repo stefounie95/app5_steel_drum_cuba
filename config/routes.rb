@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   
   get 'welcome/index'
   get 'welcome/whoweare', as: :whoweare  #definit dans le controleur welcom
+  get 'welcome/story', as: :story  #definit dans le controleur welcom
   
   resources :concerts
   

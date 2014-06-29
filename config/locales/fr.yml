@@ -1,0 +1,25 @@
+#a la fin de l'url de la page sur laquelle on navigue, mettre "?locale=fr" ou "?locale=en", suivant l'affichage voulu
+
+fr:
+  hello: "bonjour"
+  accueil: "Accueil"
+  photos: "Photos"
+  videos: "Vidéos"
+  titre1_html: "Presentation de l'association"
+  pres_html: "L'Association Steel Vibration a pour but la promotion du Steel Pan en France, en proposant des Initiations et Ateliers tous public, des Concerts, des Conférences, de la vente de Cds et d'Instruments. Venez adhérer ! Steel Vibration c'est aussi un Orchestre Steelband regroupant des musiciens amateur, tous mordus du bidon ! "
+  titre2: "Le Steel Drum"
+  pres2_html: "Un steel-drum ou steeldrum, c'est-à-dire tambour d'acier » en anglais, plus couramment appelé pan (casserole) ou steelpan — est un instrument de percussion idiophone mélodique."
+  titre3: "Concerts Steel Vibration"
+  pres3_html: "L'Association organise et vend des concerts Steel Band : Des prestations en défilé avec de 3 à 7 musiciens, appelés Steel Band traditionnel, les Panistes portent leurs instruments autour du cou et jouent du Calypso."
+  titre4: "Atelier, Stage"
+  pres4_html: "L'Association propose des Ateliers à l'année, 2 ou 3 heures par semaine. Nous proposons aussi des stages ponctuels, par exemple pendant les vacances scolaires, à raison de 3 à 6 heures. "
+  titre5: "Fabrication et Accordage"
+  pres5_html: "Steel Vibration propose aussi la création de Steel Pan neuf sur commande, chromé ou peint, ainsi que l'accordage de vos Pans personnel."
+  titre6: "Enregistrement studio"
+  pres6_html: "L'Association travail avec un ingénieur du son très expérimenté dans le domaine de l'enregistrement d'un Steel Band et qui propose ses services à tous les groupes qui sont intéressés, quelque soit leur style de musique."
+  titre7: "Conference"
+  pres7_html:  "Mathieu Borgne et Julie Goldstein anime des conférences sur cet instrument et sur la culture de Trinidad et Tobago: <br>
+     - projection de film sur Trinidad et Tobago <br>
+     - le Carnaval, le Calypso, la Soca etc..."
+    
+    

@@ -5,4 +5,7 @@ class WelcomeController < ApplicationController
   
   def whoweare
   end
+  
+  def story
+  end
 end

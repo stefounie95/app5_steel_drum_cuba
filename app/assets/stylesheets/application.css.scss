@@ -18,6 +18,7 @@
 
 body{
   background: url(http://subtlepatterns.com/patterns/halftone.png);
+  /*background: url(http://subtlepatterns.com/patterns/sandpaper.png);*/
 }
 
 
@@ -30,15 +31,128 @@ body{
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-color: white;
-background-color: #941616;
+  color: white;
+  background-color: #941616;
 }
 
 .albumpage{
   h2 {
-font-size: 23px;
-font-style: oblique;
-text-shadow: #8B8B8B 1px 2px;
-color: rgb(224, 18, 18);
+    font-size: 23px;
+    font-style: oblique;
+    text-shadow: #8B8B8B 1px 2px;
+    color: rgb(224, 18, 18);
   }
 }
+
+/* Pour la page d'accueil */
+.welcome{
+    h1 {
+      font-size: 23px;
+      font-style: oblique;
+      text-shadow: #8B8B8B 1px 2px;
+      color: rgb(224, 18, 18);
+      text-align: center;
+      height: 65%;
+      font-size: 33px;
+    }  
+  
+    h2 {
+      font-size: 23px;
+      font-style: oblique;
+      text-shadow: #8B8B8B 1px 2px;
+      color: rgb(224, 18, 18);
+      text-align: center;
+    } 
+  
+    p{
+      width: 800px;
+      height: 400px;
+      background-color: rgba(228, 216, 216, 0.75);
+      border: 5px solid rgba(174, 170, 187, 0.61);
+      border-radius: 30px;
+      width: 1120px;
+      height: 145px;
+      padding: 40px;
+      width: 914px;
+      margin-left: 100px;
+      width: 65%;
+      margin-left: 15%;
+      float: left;
+      padding-top: 28px;
+    }
+  }
+
+  .vignette{
+    width: 350px;
+    height: 400px;
+    background-color: rgba(228, 216, 216, 0.75);
+    border: 5px solid rgba(174, 170, 187, 0.61);
+    float: left;
+    border-radius: 111px;
+    margin-right: 27px;
+    margin-bottom: 14px;
+   /* padding-top: 21px;*/
+    padding-right: 2px;
+    padding-left: 2px;
+    text-align: center;
+    font-size: 85%;
+    height: 294px;
+    border-radius: 65px;
+    border-radius: 21px;
+    /*padding: 23px;*/
+    border-radius: 176px;
+    width: 264px;
+    height: 218px;
+    margin-left: -95px;
+    border-radius: 57px;
+    margin-left: 7px;
+    width: 346px;
+    border-radius: 79px;
+    height: 319px;
+    img{
+      width: 250px;
+      height: 258px;
+      height: 210px;
+      width: 274px;
+      border-radius: 82px;
+      border-radius: 176px;
+      height: 145px;
+      width: 205px;
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
+  
+  .gauche{
+    width: 800px;
+    /* height: 400px; */
+   background-color: rgba(211, 205, 205, 0.75);
+    border: 5px solid rgba(174, 170, 187, 0.61);
+    border-radius: 48px;
+    padding: 45px;
+    float:  left;
+    margin-right: 15px;
+    padding-top: 26px;
+    padding-top: 3px;
+  }
+
+  .droite{
+    width: 800px;
+    /* height: 400px; */
+    background-color: rgba(211, 205, 205, 0.75);
+    border: 5px solid rgba(174, 170, 187, 0.61);
+    border-radius: 48px;
+    padding: 45px;
+    float:  right;
+  }
+
+  .zone{
+    width: 800px;
+    /* height: 400px; */
+    background-color: rgba(211, 205, 205, 0.75);
+    border: 5px solid rgba(174, 170, 187, 0.61);
+    border-radius: 48px;
+    padding: 45px;
+    /*float:  right;*/
+  }
